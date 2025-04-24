@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: white;
+      height: 100%;
+      background-color: #000;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('back.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #29948b;
+    }
+
+    .login-btn {
+      background: #29948b;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    /* Sign In Form Section */
+    .signin-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .signin-form {
+      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .signin-form h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      text-align: center;
+      color: #3eada4;
+    }
+
+    .form-group {
+      margin-bottom: 1.5em;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
+      color: #ddd;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8em;
+      font-size: 1em;
+      color: #fff;
+      background: #333;
+      border: 1px solid #444;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #29948b;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 1em;
+      font-size: 1.2em;
+      color: #000;
+      background: #29948b;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form-group button:hover {
+      background: #237f72;
+    }
+
+    .footer {
+      text-align: center;
+      color: #ddd;
+      margin-top: 2em;
+    }
+
+    .footer a {
+      color: #29948b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <nav>
+      <div class="logo">Incredible India</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="cuisine.html">Cuisine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html" class="login-btn">Sign In</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sign In Form -->
+  <div class="signin-container">
+    <div class="signin-form">
+      <h2>Sign In</h2>
+      <form action="submit-signin.html" method="POST">
+        <!-- Email / Username Field -->
+        <div class="form-group">
+          <label for="email">Email / Username</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email or username" required />
+        </div>
+        
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+
+        <!-- Sign In Button -->
+        <div class="form-group">
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+
+      <!-- Footer Section with Sign Up Link -->
+      <div class="footer">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Culture</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: white;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #29948b;
+    }
+
+    .login-btn {
+      background: #29948b;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em;
+      background-color: #111;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #3eada4;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+      padding: 2em;
+      background-color: #111;
+    }
+
+    .culture-card {
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .culture-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .culture-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .culture-card h2 {
+      padding: 0.8em 1em 0.2em;
+      font-size: 1.3em;
+      color: #3eada4;
+    }
+
+    .culture-card p {
+      padding: 0 1em 1em;
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Incredible India</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cuisine.html">Cuisine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signin.html" class="login-btn">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>India's Diverse Culture</h1>
+  </header>
+
+  <!-- Culture Section -->
+  <section class="section">
+    <!-- Festivals -->
+    <div class="culture-card">
+      <img src="Diwali Festival.jpg" alt="Diwali Festival">
+      <h2>Festivals</h2>
+      <p>India celebrates hundreds of festivals — from Diwali and Holi to Eid and Christmas — each a vibrant showcase of heritage.</p>
+    </div>
+
+    <!-- Traditional Attire -->
+    <div class="culture-card">
+      <img src="traditional_attire.jpg" alt="Traditional Clothing">
+      <h2>Traditional Attire</h2>
+      <p>Indian clothing like sarees, turbans, and lehengas reflect the country’s ethnic richness and diversity.</p>
+    </div>
+
+    <!-- Music -->
+    <div class="culture-card">
+      <img src="indian_music.jpg" alt="Indian Music">
+      <h2>Music</h2>
+      <p>Classical ragas, Bollywood songs, and folk tunes form the heart of India's soulful music landscape.</p>
+    </div>
+
+    <!-- Dance -->
+    <div class="culture-card">
+      <img src="indian_dance.jpg" alt="Indian Dance">
+      <h2>Dance Forms</h2>
+      <p>Bharatanatyam, Kathak, and other dances bring stories to life through graceful expression and rhythm.</p>
+    </div>
+
+    <!-- Folk Art -->
+    <div class="culture-card">
+      <img src="folk_art.jpg" alt="Folk Art and Handicrafts">
+      <h2>Folk Art & Crafts</h2>
+      <p>Madhubani, Warli, and Kalamkari are just some of the intricate, vibrant styles handcrafted by local artisans.</p>
+    </div>
+
+    <!-- Architecture -->
+    <div class="culture-card">
+      <img src="indian_architecture.jpg" alt="Indian Architecture">
+      <h2>Architecture</h2>
+      <p>From ancient temples to Mughal palaces and modern marvels, Indian architecture reflects centuries of artistic evolution.</p>
+    </div>
+
+    <!-- Languages -->
+    <div class="culture-card">
+      <img src="languages.jpg" alt="Indian Languages">
+      <h2>Languages</h2>
+      <p>With over 22 official languages and hundreds of dialects, India is a linguistically rich and diverse country.</p>
+    </div>
+
+    <!-- Literature -->
+    <div class="culture-card">
+      <img src="literature.jpg" alt="Indian Literature">
+      <h2>Literature</h2>
+      <p>From the epics like Mahabharata to contemporary works, Indian literature explores themes of life, identity, and philosophy.</p>
+    </div>
+
+    <!-- Spirituality -->
+    <div class="culture-card">
+      <img src="spirituality.jpg" alt="Spirituality in India">
+      <h2>Spirituality</h2>
+      <p>India is home to major religions like Hinduism, Buddhism, Jainism, and Sikhism, with deep spiritual traditions and sacred sites.</p>
+    </div>
+
+    <!-- Cinema -->
+    <div class="culture-card">
+      <img src="bollywood.jpg" alt="Bollywood">
+      <h2>Indian Cinema</h2>
+      <p>Bollywood and regional cinema are powerful cultural forces, influencing fashion, music, and storytelling worldwide.</p>
+    </div>
+
+    <!-- Martial Arts -->
+    <div class="culture-card">
+      <img src="martial_arts.jpg" alt="Martial Arts">
+      <h2>Martial Arts</h2>
+      <p>Ancient disciplines like Kalaripayattu and Silambam showcase India's traditional combat and self-defense heritage.</p>
+    </div>
+  </section>
+
+</body>
+</html>

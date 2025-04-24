@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations - Explore India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #000;
+      color: white;
+    }
+
+    nav {
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #29948b;
+    }
+
+    .states-section {
+      padding: 4em 2em;
+      background: #111;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+    }
+
+    .states-section h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      color: #3eada4;
+    }
+
+    .card {
+      background: black;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1em;
+    }
+
+    .card-title {
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+      color: #3eada4;
+    }
+
+    .card-text {
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Incredible India</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cuisine.html">Cuisine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signin.html" class="login-btn">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <section class="states-section">
+    <h1>Popular Indian Destinations</h1>
+
+    <div class="card"><img src="tajmahal.jpg" alt="Taj Mahal"><div class="card-body"><div class="card-title">Uttar Pradesh</div><div class="card-text">Home to the iconic Taj Mahal in Agra.</div></div></div>
+    <div class="card"><img src="hawamahel.jpg" alt="Hawa Mahal"><div class="card-body"><div class="card-title">Rajasthan</div><div class="card-text">Explore the royal Hawa Mahal in Jaipur.</div></div></div>
+    <div class="card"><img src="charminar.jpg" alt="Charminar"><div class="card-body"><div class="card-title">Telangana</div><div class="card-text">Visit the magnificent Charminar in Hyderabad.</div></div></div>
+    <div class="card"><img src="backwater.jpg" alt="Backwaters of Kerala"><div class="card-body"><div class="card-title">Kerala</div><div class="card-text">Cruise through the peaceful backwaters of Alleppey.</div></div></div>
+    <div class="card"><img src="victoria memorial.jpg" alt="Victoria Memorial"><div class="card-body"><div class="card-title">West Bengal</div><div class="card-text">Admire the colonial charm of the Victoria Memorial.</div></div></div>
+    <div class="card"><img src="gateway of india.jpg" alt="Gateway of India"><div class="card-body"><div class="card-title">Maharashtra</div><div class="card-text">Stand tall by the Gateway of India in Mumbai.</div></div></div>
+    <div class="card"><img src="calangute.jpg" alt="Calangute"><div class="card-body"><div class="card-title">Goa</div><div class="card-text">Enjoy the serene beaches of Goa.</div></div></div>
+    <div class="card"><img src="bengaluru.jpg" alt="Bangalore"><div class="card-body"><div class="card-title">Karnataka</div><div class="card-text">Explore the vibrant city of Bangalore and its cuisine.</div></div></div>
+    <div class="card"><img src="Meenakshi Temple.jpg" alt="Meenakshi Temple"><div class="card-body"><div class="card-title">Tamil Nadu</div><div class="card-text">Visit the stunning Meenakshi Temple in Madurai.</div></div></div>
+    <div class="card"><img src="Araku Valley.jpg" alt="Araku Valley"><div class="card-body"><div class="card-title">Andhra Pradesh</div><div class="card-text">Discover the natural beauty of Araku Valley.</div></div></div>
+    <div class="card"><img src="Lingaraj Temple.jpg" alt="Lingaraj Temple"><div class="card-body"><div class="card-title">Odisha</div><div class="card-text">Marvel at the ancient Lingaraj Temple in Bhubaneswar.</div></div></div>
+    <div class="card"><img src="Golden Temple.jpg" alt="Golden Temple"><div class="card-body"><div class="card-title">Punjab</div><div class="card-text">Experience the serenity of the Golden Temple in Amritsar.</div></div></div>
+    <div class="card"><img src="Sukhna Lake.jpg" alt="Sukhna Lake"><div class="card-body"><div class="card-title">Haryana</div><div class="card-text">Relax at the picturesque Sukhna Lake in Chandigarh.</div></div></div>
+    <div class="card"><img src="Bodhgaya.jpg" alt="Bodhgaya"><div class="card-body"><div class="card-title">Bihar</div><div class="card-text">Visit the sacred Bodhgaya, where Buddha attained enlightenment.</div></div></div>
+    <div class="card"><img src="Halmari Tea Estate.jpg" alt="Halmari Tea Estate"><div class="card-body"><div class="card-title">Assam</div><div class="card-text">Explore the wildlife sanctuary of Kaziranga National Park.</div></div></div>
+    <div class="card"><img src="Kanger Valley.jpg" alt="Kanger Valley"><div class="card-body"><div class="card-title">Chhattisgarh</div><div class="card-text">Visit the lush Kanger Valley National Park.</div></div></div>
+    <div class="card"><img src="Jharkhand Temple.jpg" alt="Jharkhand Temple"><div class="card-body"><div class="card-title">Jharkhand</div><div class="card-text">Discover the religious significance of Jharkhand.</div></div></div>
+    <div class="card"><img src="Kanha National Park.jpg" alt="Kanha National Park"><div class="card-body"><div class="card-title">Madhya Pradesh</div><div class="card-text">Explore the wildlife of Kanha National Park.</div></div></div>
+  </section>
+
+</body>
+</html>  

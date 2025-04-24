@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuisine - Explore India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #000;
+      color: white;
+    }
+
+    nav {
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #29948b;
+    }
+
+    .login-btn {
+      background: #29948b;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .login-btn:hover {
+      background: #237f72;
+    }
+
+    .cuisine-section {
+      padding: 4em 2em;
+      background: #111;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2em;
+    }
+
+    .cuisine-section h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      color: #3eada4;
+    }
+
+    .card {
+      background: black;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1em;
+    }
+
+    .card-title {
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+      color: #3eada4;
+    }
+
+    .card-text {
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Incredible India</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="cuisine.html">Cuisine</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="signin.html" class="login-btn">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <section class="cuisine-section">
+    <h1>Flavors of India</h1>
+
+    <div class="card"><img src="north-indian-cuisine.jpg" alt="North Indian Cuisine"><div class="card-body"><div class="card-title">North Indian Cuisine</div><div class="card-text">Savor rich dishes like Butter Chicken, Naan, and more!</div></div></div>
+    <div class="card"><img src="south-indian-cuisine.jpg" alt="South Indian Cuisine"><div class="card-body"><div class="card-title">South Indian Cuisine</div><div class="card-text">Enjoy Dosas, Idlis, and a variety of rice dishes!</div></div></div>
+    <div class="card"><img src="coastal-cuisine.jpg" alt="Coastal Cuisine"><div class="card-body"><div class="card-title">Coastal Cuisine</div><div class="card-text">Indulge in fresh seafood and coconut-based dishes!</div></div></div>
+    <div class="card"><img src="street-food.jpg" alt="Street Food"><div class="card-body"><div class="card-title">Street Food</div><div class="card-text">Try snacks like Pani Puri, Vada Pav, and more!</div></div></div>
+    <div class="card"><img src="indian-dessert.jpg" alt="Indian Desserts"><div class="card-body"><div class="card-title">Indian Desserts</div><div class="card-text">Enjoy sweets like Gulab Jamun, Jalebi, and Kheer!</div></div></div>
+    <div class="card"><img src="rajasthani-cuisine.jpg" alt="Rajasthani Cuisine"><div class="card-body"><div class="card-title">Rajasthani Cuisine</div><div class="card-text">Relish Dal Baati Churma and Gatte Ki Sabzi!</div></div></div>
+    <div class="card"><img src="punjabi-cuisine.jpg" alt="Punjabi Cuisine"><div class="card-body"><div class="card-title">Punjabi Cuisine</div><div class="card-text">Taste Amritsari Kulcha and Sarson Da Saag!</div></div></div>
+    <div class="card"><img src="bengali-cuisine.jpg" alt="Bengali Cuisine"><div class="card-body"><div class="card-title">Bengali Cuisine</div><div class="card-text">Try fish curries, Mishti Doi, and Sandesh!</div></div></div>
+    <div class="card"><img src="kashmiri-cuisine.jpg" alt="Kashmiri Cuisine"><div class="card-body"><div class="card-title">Kashmiri Cuisine</div><div class="card-text">Delight in Rogan Josh and Dum Aloo!</div></div></div>
+    <div class="card"><img src="gujarati-cuisine.jpg" alt="Gujarati Cuisine"><div class="card-body"><div class="card-title">Gujarati Cuisine</div><div class="card-text">Taste Dhokla, Thepla, and Undhiyu!</div></div></div>
+    <div class="card"><img src="hyderabadi-cuisine.jpg" alt="Hyderabadi Cuisine"><div class="card-body"><div class="card-title">Hyderabadi Cuisine</div><div class="card-text">Savor Biryani and Haleem from Hyderabad!</div></div></div>
+
+  </section>
+
+</body>
+</html>

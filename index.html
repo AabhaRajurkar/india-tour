@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Georgia', serif;
+      background: #000;
+      color: white;
+    }
+
+    .hero {
+      background: url('back.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 1em 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #29948b;
+    }
+
+    .login-btn {
+      background: #29948b;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero-content p {
+      font-size: 1.3em;
+      color: #ddd;
+    }
+
+    .get-started-btn {
+      background: #29948b;
+      padding: 0.8em 1.5em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .get-started-btn:hover {
+      background: #24867b;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #111;
+      padding: 2em;
+      text-align: center;
+      color: #ddd;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+      margin: 0.5em 0;
+    }
+
+    footer a {
+      color: #29948b;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <nav>
+      <div class="logo">Incredible India</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="cuisine.html">Cuisine</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html" class="login-btn">Sign in</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to the Heart of India</h1>
+      <p>Experience the beauty, history, and spirit of India</p>
+      <button class="get-started-btn" onclick="window.location.href='signin.html'">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Incredible India. All Rights Reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
